@@ -1,0 +1,38 @@
+button {
+  background-color: #404040;
+  border: none;
+  margin: 10px 20px;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+
+  &:hover {
+    color: #404040;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: none;
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+  }
+
+  &--primary {
+    background: #404040;  
+    color: #fff;
+    transition: all 0.3 ease 0s; 
+
+    &:hover {
+      color: #404040;
+      font-weight: 700;
+      letter-spacing: 3px;
+      background-color: none;
+      box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
