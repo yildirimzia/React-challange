@@ -2,9 +2,10 @@ import React from 'react';
 import './countryHeader.scss';
 
 const countryHeader = (props) => {
+  const {buttons = []} = props;
   return (
     <div className="country-header">
-      {props.buttons.map((button, index) => {
+      {buttons.map((button, index) => {
         return <div key={index} className="country-header__wrapper">
           <button onClick={button.callback} className="button button--primary">
             {button.text}
@@ -13,6 +14,6 @@ const countryHeader = (props) => {
       })}
     </div>
   );
-}
+};
 
 export default countryHeader;
